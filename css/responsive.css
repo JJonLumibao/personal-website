@@ -1,0 +1,53 @@
+/* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (max-width: 1023px) {
+  header {
+    position: fixed;
+    width: auto;
+    height: 85px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+    border-bottom: solid 1px #aaa;
+    filter: drop-shadow(0 0 5px gray);
+  }
+
+  .picture-of-me {
+    margin-top: 70px;
+  }
+
+  .big-JJ {
+    top: 355px;
+  }
+
+  .big-lumibao {
+    display: none;
+  }
+
+  p {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .button,
+  .button a {
+    background-color: rgb(20, 113, 194);
+    color: white;
+    border: 1px solid rgb(20, 113, 194);
+    transition: none;
+  }
+
+  .button:hover,
+  .button a:hover {
+    transform: none;
+  }
+
+}
+
+/* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (max-width: 767px) {
+  p {
+    font-size: 0.8rem;
+    line-height: 30px;
+  }
+}
