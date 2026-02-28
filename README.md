@@ -15,6 +15,10 @@ personal-website/
 │── css/
 │ └── responsive.css
 │ └── styles.css
+│── html/
+│ └── about-me.html
+│ └── projects.html
+│ └── web-designs.html
 │── images/
 │ ├── aboutme.jpg
 │ └── profile.png
