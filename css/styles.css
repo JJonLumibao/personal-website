@@ -7,11 +7,14 @@ html {
 }
 
 body {
-  color: black;
+  color: rgb(68, 68, 68);
   background-color: aliceblue;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+b, h2, h3 {
+  color: black;
 }
 
 ::selection {
@@ -19,20 +22,53 @@ body {
   background-color: blue;
 }
 
-.big-JJ {
-  font: 128px Verdana, sans-serif;
-  color: aliceblue;
-  position: absolute;
-  top: 369px;
-  left: 50px;
+.top-navigation {
+  display: flex;
+  flex-direction: row;
 }
 
-.big-lumibao {
-  font: 128px Verdana, sans-serif;
+header {
+  width: auto;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: aliceblue;
+}
+
+.top-navigation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.top-navigation ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content ul li {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.top-navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-navigation a:hover {
+  color: rgb(20, 113, 194);
+}
+
+.image-header {
+  font: 90px Verdana, sans-serif;
   color: aliceblue;
   position: absolute;
-  top: 371px;
-  left: 200px;
+  top: 390px;
+  left: 30px;
 }
 
 h2 {
@@ -49,13 +85,13 @@ h2 {
 p {
   font-size: 1.3rem;
   width: 70%;
-  line-height: 40px;
+  line-height: 50px;
   margin: 0 auto;
   padding: 1rem;
   text-align: justify;
 }
 
-.picture-of-me {
+.page-img {
   display: block;
   width: 100%;
   height: 500px;
@@ -63,15 +99,22 @@ p {
   object-position: 50% 47%;
 }
 
+.about-me-img, .projects-img {
+  object-position: 50% 20%;
+}
+
+.web-img {
+  object-position: 0% 0%;
+}
+
 .description {
-  margin: 1rem 0.5rem;
+  margin: 4rem 0.5rem;
 }
 
 .socials {
   width: 100%;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 .social-icons:hover {
@@ -86,6 +129,41 @@ p {
 
 .socials a {
   text-decoration: none;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 300px;
+  height: 450px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease-in-out;
+              box-shadow: 0.2s ease-in-out;
+}
+
+.project-card div {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 gray;
+}
+
+.more-info {
+  color: gray;
+  text-align: center;
+  margin-top: auto;
 }
 
 .button {
@@ -120,8 +198,17 @@ p {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
   background: black;
   color: gray;
   width: 100%;
+  height: 100px;
   padding: 10px;
+}
+
+.footer-end {
+  margin-bottom: 20px;
+  font-size: 0.8rem;
 }

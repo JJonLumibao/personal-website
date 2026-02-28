@@ -1,26 +1,22 @@
 @media (max-width: 1023px) {
   header {
     position: fixed;
-    width: auto;
-    height: 85px;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: aliceblue;
     border-bottom: solid 1px #aaa;
     filter: drop-shadow(0 0 5px gray);
+    z-index: 100;
   }
 
-  .picture-of-me {
+  .header-content a {
+    color: rgb(20, 113, 194);
+  }
+
+  .page-img {
     margin-top: 70px;
   }
 
-  .big-JJ {
-    top: 355px;
-  }
-
-  .big-lumibao {
-    display: none;
+  .image-header {
+    font-size: 3rem;
+    top: 440px;
   }
 
   p {
@@ -44,8 +40,19 @@
 }
 
 @media (max-width: 767px) {
+  .header-content a {
+    font-size: 0.75rem;
+  }
+  
   p {
     font-size: 0.8rem;
     line-height: 30px;
   }
+
+  .image-header {
+    font-size: 2rem;
+    top: 473px;
+    left: 30px;
+  }
+
 }
