@@ -37,6 +37,19 @@
     transform: none;
   }
 
+  .project-content {
+    flex-direction: column;
+  }
+
+  .project-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-header .button {
+    margin: 0 auto;
+  }
+
 }
 
 @media (max-width: 767px) {

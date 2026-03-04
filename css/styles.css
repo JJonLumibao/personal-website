@@ -71,7 +71,7 @@ header {
   left: 30px;
 }
 
-h2 {
+.description-header {
   text-align: center;
 }
 
@@ -174,11 +174,14 @@ p {
   height: 30px;
   border: 1px solid;
   background-color: aliceblue;
-  margin: 0 auto;
   transition: transform 0.2s ease-in-out, 
               background-color 0.2s ease-in-out, 
               color 0.2s ease-in-out,
               border-color 0.2s ease-in-out;
+}
+
+.description .button {
+  margin: 0 auto;
 }
 
 .button:hover,
@@ -211,4 +214,55 @@ footer {
 .footer-end {
   margin-bottom: 20px;
   font-size: 0.8rem;
+}
+
+/* Projects HTML */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  gap: 20px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.project-media {
+  padding: 30px;
+  flex: 1;
+}
+
+.project-media iframe {
+  display: block;
+  aspect-ratio: 16/9;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-header h2 {
+  font-size: 1.2rem;
+}
+
+.project-header .button {
+  width: 150px;
+  margin-left: auto;
 }
