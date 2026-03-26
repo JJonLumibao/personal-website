@@ -1,206 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 20px;
-}
-
-body {
-  color: rgb(68, 68, 68);
-  background-color: aliceblue;
-  margin: 0;
-  padding: 0;
-}
-
-b, h2, h3 {
-  color: black;
-}
-
-::selection {
-  color: white;
-  background-color: blue;
-}
-
-.top-navigation {
-  display: flex;
-  flex-direction: row;
-}
-
-header {
-  width: auto;
+/* Layout */
+.header {
+  width: 100%;
   height: 70px;
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: aliceblue;
 }
 
-.top-navigation {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.top-navigation ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-content ul li {
-  text-align: center;
-  margin: 0 20px;
-}
-
-.top-navigation a {
-  text-decoration: none;
-  color: black;
-}
-
-.top-navigation a:hover {
-  color: rgb(20, 113, 194);
-}
-
-.image-header {
-  font: 90px Verdana, sans-serif;
-  color: aliceblue;
-  position: absolute;
-  top: 390px;
-  left: 30px;
-}
-
-.description-header {
-  text-align: center;
-}
-
-.description-header::before,
-.description-header::after {
-  content: '\2500';
-  margin: 0 20px;
-  color: rgb(177, 177, 177);
-}
-
-p {
-  font-size: 1.3rem;
-  width: 70%;
-  line-height: 50px;
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: justify;
-}
-
-.page-img {
-  display: block;
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  object-position: 50% 47%;
-}
-
-.about-me-img, .projects-img {
-  object-position: 50% 20%;
-}
-
-.web-img {
-  object-position: 0% 0%;
-}
-
-.description {
-  margin: 4rem 0.5rem;
-}
-
-.socials {
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.social-icons:hover {
-  transform: scale(1.2);
-}
-
-.social-icons {
-  color: black;
-  font-size: 30px;
-  transition: transform 0.1s ease-in-out;
-}
-
-.socials a {
-  text-decoration: none;
-}
-
-.project-list {
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  margin: 0 auto;
-  gap: 30px;
-}
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  width: 300px;
-  height: 450px;
-  margin-bottom: 30px;
-  transition: transform 0.2s ease-in-out;
-              box-shadow: 0.2s ease-in-out;
-}
-
-.project-card div {
-  font-size: 0.8rem;
-  margin-bottom: 10px;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px 0 gray;
-}
-
-.more-info {
-  color: gray;
-  text-align: center;
-  margin-top: auto;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 280px;
-  height: 30px;
-  border: 1px solid;
-  background-color: aliceblue;
-  transition: transform 0.2s ease-in-out, 
-              background-color 0.2s ease-in-out, 
-              color 0.2s ease-in-out,
-              border-color 0.2s ease-in-out;
-}
-
-.description .button {
-  margin: 0 auto;
-}
-
-.button:hover,
-.button a:hover {
-  background-color: rgb(20, 113, 194);
-  color: white;
-  border: 1px solid rgb(20, 113, 194);
-  transform: scale(1.05);
-}
-
-.button a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: black;
-}
-
-footer {
+.footer {
   display: flex;
   justify-content: center;
   align-items: end;
@@ -216,53 +21,197 @@ footer {
   font-size: 0.8rem;
 }
 
-/* Projects HTML */
-.project-container {
+/* Navigation */
+.top-navigation {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-  margin-top: 55px;
-  margin-bottom: 55px;
-  gap: 20px;
-}
-
-.project-content {
-  display: flex;
-  flex-direction: row;
   width: 100%;
 }
 
-.project-media {
-  padding: 30px;
-  flex: 1;
-}
-
-.project-media iframe {
-  display: block;
-  aspect-ratio: 16/9;
-}
-
-.project-text {
+.nav-list {
   display: flex;
-  flex-direction: column;
-  flex: 3;
-}
-
-.project-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  list-style: none;
   align-items: center;
 }
 
-.project-header h2 {
-  font-size: 1.2rem;
+.nav-list li {
+  margin: 0 20px;
 }
 
-.project-header .button {
-  width: 150px;
-  margin-left: auto;
+.top-navigation a {
+  text-decoration: none;
+  color: black;
 }
+
+.top-navigation a:hover {
+  color: rgb(20, 113, 194);
+}
+
+/* Mobile Menu */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.menu-container.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-panel {
+  width: 100%;
+  height: 300px;
+  background-color: var(--color-bg);
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+}
+
+.menu-container.open .menu-panel {
+  transform: translateY(0);
+}
+
+.menu-overlay {
+  flex: 1;
+}
+
+.menu-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Mobile Buttons */
+.menu-btn {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 50% 47%;
+}
+
+.about-img {
+  object-position: 50% 20%;
+}
+
+.hero-title {
+  position: absolute;
+  bottom: -10%;
+  left: 30px;
+  font: 90px Verdana, sans-serif;
+  color: white;
+}
+
+/* Sections */
+.section {
+  text-align: center;
+}
+
+.section-title::before,
+.section-title::after {
+  content: '\2500';
+  margin: 0 20px;
+  color: rgb(177, 177, 177);
+}
+
+/* Socials */
+.socials {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.social-icons {
+  color: black;
+  font-size: 30px;
+  transition: transform 0.1s ease-in-out;
+}
+
+
+.social-icons:hover {
+  transform: scale(1.2);
+}
+
+/* Button */
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 280px;
+  height: 30px;
+  border: 1px solid;
+  background-color: aliceblue;
+  transition: 0.2s;
+}
+
+.button a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  background-color: rgb(20, 113, 194);
+  border-color: rgb(20, 113, 194);
+  transform: scale(1.05);
+}
+
+.button:hover a {
+  color: white;
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.project-card {
+  text-align: center;
+  width: 300px;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.project-title {
+  margin-top: 0;
+}
+

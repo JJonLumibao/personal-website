@@ -1,0 +1,51 @@
+/* Projects */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  gap: 20px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.project-media {
+  padding: 30px;
+  flex: 1;
+}
+
+.project-media iframe {
+  display: block;
+  aspect-ratio: 16/9;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-header h2 {
+  font-size: 1.2rem;
+}
+
+.project-header .button {
+  width: 150px;
+  margin-left: auto;
+  text-align: center;
+}

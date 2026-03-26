@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/pages.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <script
       src="https://kit.fontawesome.com/b5e2898573.js"
@@ -13,86 +16,130 @@
     <title>Web Design Samples - JJ Lumibao Portfolio</title>
 </head>
   <body>
-    <header>
+    <header class="header">
       <div class="content header-content">
         <nav class="top-navigation">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
+          <ul class="nav-list">
+            <li><a href="/">Home</a></li>
             <li><a href="./about-me.html">About Me</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./web-designs.html">Web Design Samples</a></li>
           </ul>
         </nav>
       </div>
+
+      <button class="menu-btn" data-open="menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
-    <img class="page-img web-img" src="../images/webdesign.png" alt="VS code of my index.html" />
-    <h1 class="image-header">Web Design Samples</h1>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/jani-jon-lumibao-b90129331" target="_blank">
-        <i class="fa-brands fa-linkedin social-icons"></i>
-      </a>
-      <a href="https://www.instagram.com/jjnooodles/?next=%2F" target="_blank">
-        <i class="fa-brands fa-instagram social-icons"></i>
-      </a>
-      <a href="https://github.com/JJonLumibao" target="_blank">
-        <i class="fa-brands fa-github social-icons"></i>
-      </a>
+
+    <div id="menu" class="menu-container">
+      <div class="menu-panel">
+        <i class="fas fa-times menu-close" data-close></i>
+      </div>
+      <div class="menu-overlay" data-close></div>
     </div>
-    <div class="description web-design-samples">
-      <h2 class="description-header">Background</h2>
-      <p>
-        I was born in the Philippines and moved to Florida when I was young. In high school, JROTC 
-        played a major role in building my <b>confidence, discipline, and leadership skills</b>. After 
-        failing my first attempt to join the Drill Team, I practiced daily until I earned my spot, 
-        which taught me the importance of <b>persistence and hard work</b>. I eventually became a Cadet 
-        Captain Company Commander, where I learned how to <b>lead a team, stay organized, and take 
-        responsibility for results</b>.
-      </p>
-    </div>
-    <div class="description about-me">
-      <h2 class="description-header">Engineering</h2>
-      <p>
-        Throughout college, I gained experience in <b>embedded systems, web development, and game design</b> through 
-        both individual and team-based projects. Working in group environments helped me develop strong 
-        communication skills, adaptability, and the ability to solve problems under pressure.
-      </p>
-      <p>
-        In one of my projects, our team encountered a major hardware failure less than a week before the deadline 
-        when our circuit boards stopped working. With limited time remaining, <b>I stepped into a larger role to 
-        help troubleshoot the issue, reorganize our tasks, and keep the team focused on completing the project</b>. 
-        By staying composed and working efficiently, we were able to redesign and fix the problem in time, and 
-        the final system functioned successfully in all required aspects.
-      </p>
-      <p>
-        Experiences like this have strengthened my ability to <b>stay calm in difficult situations, take initiative 
-        when needed, and work with a team to bring complex projects to completion</b>.
-      </p>
-    </div>
-    <div class="description about-me">
-      <h2 class="description-header">Dance</h2>
-      <p>
-        Dance has been a major part of my life for years. I've been a member of Komodo, a professional 
-        dance crew in Orlando, for the past two years. Before that, I was part of Fresh Off the Beat, 
-        the hip-hop/contemporary dance team of the Filipino Student Association at UCF, where I also 
-        spent a year in a <b>leadership</b> role. My main style is tutting, an intricate type of dance that 
-        focuses on angles and visual patterns. Through dance, I've gained experience performing, competing, 
-        freestyling, and <b>working closely with a team</b>, which has strengthened my <b>creativity, 
-        discipline, and confidence</b>. 
-      </p>
-    </div>
-    <div class="description projects">
-      <h2 class="description-header">Gaming</h2>
-      <p>
-        In my free time, I enjoy playing video games, ranging from competitive multiplayer games like Dead by Daylight 
-        and Valorant to story-driven single-player games like The Last of Us and the Final Fantasy series. Gaming has 
-        helped me develop <b>problem-solving and quick decision-making skills</b>. I've also occasionally streamed on Twitch 
-        mainly for friends and personal enjoyment.
-      </p>
-    </div>
-    <footer>
+    
+    <main>
+      <section class="hero">
+        <img class="hero-img web-img" src="../assets/images/header/webdesign.png" alt="VS code of my index.html" />
+        <h1 class="hero-title">Web Design Samples</h1>
+      </section>
+    
+      <section class="socials">
+        <a href="https://www.linkedin.com/in/jani-jon-lumibao-b90129331" target="_blank">
+          <i class="fa-brands fa-linkedin social-icons"></i>
+        </a>
+        <a href="https://www.instagram.com/jjnooodles/?next=%2F" target="_blank">
+          <i class="fa-brands fa-instagram social-icons"></i>
+        </a>
+        <a href="https://github.com/JJonLumibao" target="_blank">
+          <i class="fa-brands fa-github social-icons"></i>
+        </a>
+      </section>
+
+      <div class="project-container">
+        <div class="project-content">
+          <div class="project-media">
+            <iframe 
+              src="https://www.youtube.com/embed/QMy2-tpW8sA?si=RcC2oo5d4fwPIPx2" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="project-text">
+            <div class="project-header">
+              <h2>Style Tracking Expressive Pad System (STEPS)</h2>
+              <div class="button"><a href="" target="_blank">View Code</a></div>
+            </div>
+            <div><b>Team Size:</b> 5</div>
+            <div><b>Role:</b> Embedded Programmer and Hardware Assistant</div>
+            <div><b>Time Spent:</b> ≈ 7 months</div>
+            <div>
+              <b>Description: </b> A 9-step input dance pad that utilizes force-sensing resistors (FSRs), 
+              computer vision, a custom Godot game engine, and an IR LED array to track expressive dance 
+              movements. 
+            </div>
+            <div>
+              <b>Technologies:</b> C/C++, ATmega32u4, ATmega328P, I2C Communication, FSR Sensors, RGB LEDs, 
+              Arduino IDE, Godot Engine
+            </div>
+            <div>
+              <b>Key Contributions:</b>
+              <ul>
+                <li>Programmed a master ATmega32u4 controller communicating with nine ATmega328P tile controllers.</li>
+                <li>Implemented FSR sensor detection and signal processing for dance input recognition.</li>
+                <li>Developed programmable RGB LED feedback system within each tile.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-media">
+            <iframe 
+              src="https://www.youtube.com/embed/oE2jDW6wtuc?si=4Zldolm5j0dB4_f9" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="project-text">
+            <div class="project-header">
+              <h2>Omni-Gauntlet</h2>
+              <div class="button"><a href="https://github.com/JJonLumibao/OmniGauntlet" target="_blank">View Code</a></div>
+            </div>
+            <div><b>Team Size:</b> 4</div>
+            <div><b>Role:</b> Embedded Programmer</div>
+            <div><b>Time Spent:</b> ≈ 3 months</div>
+            <div>
+              <b>Description:</b> A gesture-controlled glove system that wirelessly commands a 
+              mecanum-wheel robot using ESP32 microcontrollers.
+            </div>
+            <div>
+              <b>Technologies:</b> ESP32-WROOM-32, WiFi Communication, C/C++, Arduino IDE
+            </div>
+            <div>
+              <b>Key Contributions:</b>
+              <ul>
+                <li>Programmed ESP32 sender firmware for glove-based motion input.</li>
+                <li>Developed receiver firmware to control the robot vehicle in real time.</li>
+                <li>Implemented wireless communication protocol between glove and robot.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
       <div class="content footer-content">
         <div class="footer-end">This website was fully designed and integrated by Jani Jon Lumibao</div>
       </div>
     </footer>
   </body>
+  <script src="../js/main.js"></script>
 </html>

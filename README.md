@@ -12,18 +12,29 @@ The following is the structure of the following repository:
 
 ```text
 personal-website/
+│── assets/
+│ └── images/
+│   └── header
+│     ├── header
+│       └── aboutme.jpg
+│       └── profile.png
+│       └── projects.jpg
+│       └── webdesign.png
+│     └── projects
+│       └── omnigauntlet.jpg
+│       └── STEPS.jpg
 │── css/
+│ └── base.css
+│ └── pages.css
 │ └── responsive.css
 │ └── styles.css
+│ └── theme.css
 │── html/
 │ └── about-me.html
 │ └── projects.html
 │ └── web-designs.html
-│── images/
-│ ├── aboutme.jpg
-│ └── profile.png
-│ └── projects.jpg
-│ └── webdesign.png
+│── js/
+│ └── main.js
 │── index.html
 │── package-lock.json
 │── package.json

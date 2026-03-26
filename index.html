@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <script
@@ -13,116 +15,109 @@
     <title>Home - JJ Lumibao Portfolio</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="content header-content">
         <nav class="top-navigation">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
+          <ul class="nav-list">
+            <li><a href="/">Home</a></li>
             <li><a href="./html/about-me.html">About Me</a></li>
             <li><a href="./html/projects.html">Projects</a></li>
             <li><a href="./html/web-designs.html">Web Design Samples</a></li>
           </ul>
         </nav>
       </div>
+      <button class="menu-btn" data-open="menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
-    <img class="page-img me-img" src="./images/profile.png" alt="Jani Jon Lumibao" />
-    <h1 class="image-header">JJ Lumibao</h1>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/jani-jon-lumibao-b90129331" target="_blank">
-        <i class="fa-brands fa-linkedin social-icons"></i>
-      </a>
-      <a href="https://www.instagram.com/jjnooodles/?next=%2F" target="_blank">
-        <i class="fa-brands fa-instagram social-icons"></i>
-      </a>
-      <a href="https://github.com/JJonLumibao" target="_blank">
-        <i class="fa-brands fa-github social-icons"></i>
-      </a>
+
+    <div id="menu" class="menu-container">
+      <div class="menu-panel">
+        <i class="fas fa-times menu-close" data-close></i>
+      </div>
+      <div class="menu-overlay" data-close></div>
     </div>
 
-    <div class="description about-me">
-      <h2 class="description-header">About Me</h2>
-      <p>
-        Hello, my name is Jani Jon Lumibao, and I graduated from the University
-        of Central Florida with a <b>Bachelor of Science in Computer Engineering</b>. I am 
-        a freelance web developer passionate about building clean, responsive, and 
-        user-focused websites using <b>HTML, CSS, JavaScript, and database</b> technologies. 
-      </p>
-      <p>
-        In addition to web technologies, I am deeply interested in both <b>software 
-        engineering and embedded hardware systems</b>. My engineering background, combined 
-        with strong creative interests in dance and digital media, enables me to build 
-        solutions that are both technically sound and visually engaging.
-      </p>
-      <div class="button">
-        <a href="./html/about-me.html">More About Me</a>
-      </div>
-    </div>
-    <div class="description projects">
-      <h2 class="description-header">Projects</h2>
-      <p>
-        This section highlights engineering projects in embedded systems, hardware integration, 
-        and full-stack software development. These projects demonstrate problem-solving skills, 
-        system design, and hands-on implementation in both team-based and independent work.
-      </p>
-      <div class="project-list">
-        <div class="project-card">
-          <div class="video steps-project">
-            <iframe 
-              width="100%" 
-              height="100%" 
-              src="https://www.youtube.com/embed/QMy2-tpW8sA?si=RcC2oo5d4fwPIPx2" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <h3>STEPS Dance Pad</h3>
-          <div><b>Team Size:</b> 5</div>
-          <div><b>Role:</b> Embedded Programmer and Hardware Assistant</div>
-          <div><b>Description: </b> A 9-step input dance pad that utilizes FSRs, computer vision, a custom-made Godot game, and an IR LED array.</div>
-          <div class="more-info">- Click for more info -</div>
+    <main>
+      <section class="hero">
+        <img class="hero-img" src="./assets/images/header/profile.png" alt="Jani Jon Lumibao" />
+        <h1 class="hero-title">JJ Lumibao</h1>
+      </section>
+
+      <section class="socials">
+        <a href="https://www.linkedin.com/in/jani-jon-lumibao-b90129331" target="_blank">
+          <i class="fa-brands fa-linkedin social-icons"></i>
+        </a>
+        <a href="https://www.instagram.com/jjnooodles/?next=%2F" target="_blank">
+          <i class="fa-brands fa-instagram social-icons"></i>
+        </a>
+        <a href="https://github.com/JJonLumibao" target="_blank">
+          <i class="fa-brands fa-github social-icons"></i>
+        </a>
+      </section>
+      
+      <section class="section about-me">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          Hello, my name is Jani Jon Lumibao, and I graduated from the University
+          of Central Florida with a <b>Bachelor of Science in Computer Engineering</b>. I am 
+          a freelance web developer passionate about building clean, responsive, and 
+          user-focused websites using <b>HTML, CSS, JavaScript, and database</b> technologies. 
+        </p>
+        <p>
+          In addition to web technologies, I am deeply interested in both <b>software 
+          engineering and embedded hardware systems</b>. My engineering background, combined 
+          with strong creative interests in dance and digital media, enables me to build 
+          solutions that are both technically sound and visually engaging.
+        </p>
+        <div class="button">
+          <a href="./html/about-me.html">More About Me</a>
         </div>
-        <div class="project-card">
-          <div class="video omni-gauntlet-project">
-            <iframe 
-              width="100%" 
-              height="100%" 
-              src="https://www.youtube.com/embed/oE2jDW6wtuc?si=4Zldolm5j0dB4_f9" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" 
-              allowfullscreen>
-            </iframe>
+      </section>
+
+      <section class="section projects">
+        <h2 class="section-title">Projects</h2>
+        <p>
+          This section highlights engineering projects in embedded systems, hardware integration, 
+          and full-stack software development. These projects demonstrate problem-solving skills, 
+          system design, and hands-on implementation in both team-based and independent work.
+        </p>
+        <div class="project-list">
+          <div class="project-card">
+            <img src="./assets/images/projects/STEPS.png" alt="STEPS prototype demo">
+            <h3 class="project-title">STEPS Dance Pad</h3>
           </div>
-          <h3>Omni-Gauntlet</h3>
-          <div><b>Team Size:</b> 4</div>
-          <div><b>Role:</b> Embedded Programmer</div>
-          <div><b>Description: </b> A glove that communicates wirelessly with a robot vehicle using ESP32-WROOM-32 microcontrollers</div>
-          <div class="more-info">- Click for more info -</div>
+          <div class="project-card">
+            <img src="./assets/images/projects/omnigauntlet.png" alt="Omni-Gauntlet">
+            <h3 class="project-title">Omni-Gauntlet</h3>
+          </div>
         </div>
-      </div>
-      <div class="button">
-        <a href="./html/projects.html">More Projects</a>
-      </div>
-    </div>
-    <div class="description web-design-samples">
-      <h2 class="description-header">Web Design Samples</h2>
-      <p>
-        This section showcases front-end web design samples I built with HTML and CSS. These 
-        projects highlight responsive layouts, strong visual hierarchy, and thoughtful design 
-        execution.
-      </p>
-      <div class="button">
-        <a href="./html/web-designs.html">More Web Design Samples</a>
-      </div>
-    </div>
-    <footer>
+        <div class="button">
+          <a href="./html/projects.html">More Projects</a>
+        </div>
+      </section>
+
+      <section class="section web-design-samples">
+        <h2 class="section-title">Web Design Samples</h2>
+        <p>
+          This section showcases front-end web design samples I built with HTML and CSS. These 
+          projects highlight responsive layouts, strong visual hierarchy, and thoughtful design 
+          execution.
+        </p>
+        <div class="button">
+          <a href="./html/web-designs.html">More Web Design Samples</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="content footer-content">
-        <div class="footer-end">This website was fully designed and integrated by Jani Jon Lumibao</div>
+        <div class="footer-end">
+          This website was fully designed and integrated by Jani Jon Lumibao
+        </div>
       </div>
     </footer>
   </body>
+  <script src="./js/main.js"></script>
 </html>
+      
