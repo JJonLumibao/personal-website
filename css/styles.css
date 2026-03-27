@@ -2,7 +2,8 @@
 .header {
   width: 100%;
   height: 70px;
-  background-color: aliceblue;
+  background-color: var(--color-bg);
+  z-index: 2000;
 }
 
 .footer {
@@ -53,9 +54,8 @@
   flex-direction: column;
   position: fixed;
   inset: 0;
-  z-index: 200;
+  z-index: 1000;
   background: rgba(0, 0, 0, 0.5);
-
   opacity: 0;
   pointer-events: none;
   transition: 0.3s;
@@ -67,11 +67,14 @@
 }
 
 .menu-panel {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  text-align: right;
+  justify-content: space-evenly;
+  text-align: center;
   width: 100%;
-  height: 300px;
+  height: 212px;
   background-color: var(--color-bg);
   transform: translateY(-100%);
   transition: transform 0.4s ease;
@@ -83,11 +86,20 @@
 }
 
 .menu-container.open .menu-panel {
-  transform: translateY(0);
+  transform: translateY(33%);
+}
+
+.menu-item {
+  padding: 15px;
+}
+
+.menu-item:active {
+  background-color: gray;
 }
 
 .menu-overlay {
   flex: 1;
+  z-index: 1;
 }
 
 .menu-close {
@@ -223,6 +235,7 @@
   text-align: center;
   width: 300px;
   transition: transform 0.2s;
+  text-decoration: none;
 }
 
 .project-card:hover {

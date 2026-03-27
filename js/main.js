@@ -16,6 +16,12 @@ closeMenus.forEach(btn => {
   });
 });
 
+window.addEventListener('resize', () => {
+  if(window.innerWidth > 767) {
+    menu.classList.remove('open');
+  }
+})
+
 function respondToVisibility(elm, cb) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
