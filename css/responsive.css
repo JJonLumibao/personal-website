@@ -1,5 +1,9 @@
 /* Tablet */
 @media (max-width: 1023px) {
+  html {
+    font-size: 14px;
+  }
+
   .header {
     position: fixed;
     top: 0;
@@ -56,6 +60,10 @@
 
 /* Mobile */
 @media (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+
   .nav-list {
     display: none;
   }

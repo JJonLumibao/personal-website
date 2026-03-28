@@ -14,15 +14,14 @@ The following is the structure of the following repository:
 personal-website/
 │── assets/
 │ └── images/
-│   └── header
-│     ├── header
-│       └── aboutme.jpg
-│       └── profile.png
-│       └── projects.jpg
-│       └── webdesign.png
-│     └── projects
-│       └── omnigauntlet.jpg
-│       └── STEPS.jpg
+│   ├── header
+│     └── aboutme.jpg
+│     └── profile.png
+│     └── projects.jpg
+│     └── webdesign.png
+│   └── projects
+│     └── omnigauntlet.png
+│     └── STEPS.png
 │── css/
 │ └── base.css
 │ └── pages.css
