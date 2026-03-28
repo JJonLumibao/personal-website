@@ -44,7 +44,7 @@
   .project-header {
     flex-direction: column;
     text-align: center;
-    gap: 0px;
+    gap: 20px;
   }
 
   .project-links {
@@ -87,12 +87,8 @@
   }
 
   p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-  }
-
-  .social-icons {
-    font-size: 24px;
+    font-size: 1rem;
+    line-height: 3;
   }
 
   .project-list {
@@ -105,7 +101,7 @@
   }
 
   .project-header h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .project-btn, .project-icon {

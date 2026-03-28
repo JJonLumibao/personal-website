@@ -3,6 +3,7 @@
 }
 
 html {
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
 }
 
@@ -32,5 +33,14 @@ p {
 }
 
 .section {
-  margin: 4rem 0.5rem;
+  margin: 180px auto;
+}
+
+.section-title, h3 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+b {
+  font-weight: 500;
 }

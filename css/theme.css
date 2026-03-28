@@ -1,14 +1,6 @@
 :root {
-  --color-bg: aliceblue;
+  --color-bg: #fff;
   --color-text: rgb(126, 126, 126);
-  --color-heading: black;
-  --color-accent: rgb(20, 113, 194);
-  --color-muted: gray;
-}
-
-[data-theme="dark"] {
-  --color-bg: aliceblue;
-  --color-text: rgb(68, 68, 68);
   --color-heading: black;
   --color-accent: rgb(20, 113, 194);
   --color-muted: gray;
