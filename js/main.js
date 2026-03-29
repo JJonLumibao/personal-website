@@ -17,6 +17,12 @@ closeMenus.forEach(btn => {
   });
 });
 
+document.addEventListener('keyup', (e) => {
+  if(e.key === 'Escape') {
+    menu.classList.remove('open');
+  }
+});
+
 window.addEventListener('resize', () => {
   if(window.innerWidth > 767) {
     menu.classList.remove('open');
