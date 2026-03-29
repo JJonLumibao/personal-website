@@ -21,22 +21,30 @@
     bottom: -5%;
   }
 
+  .resume-tab {
+    flex-direction: column;
+    width: 250px;
+    padding-top: 30px;
+    gap: 10px;
+    bottom: -5%;
+  }
+
   p {
     font-size: 1rem;
     width: 80%;
     margin: 0 auto;
   }
 
-  .button, .project-btn {
+  .button, .social-btn {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
   }
 
-  .button a, .project-btn a, .project-icon {
+  .button a, .social-btn a, .social-btn-icon {
     color: var(--color-bg);
   }
 
-  .button:hover, .project-btn:hover {
+  .button:hover, .social-btn:hover {
     transform: none;
   }
 

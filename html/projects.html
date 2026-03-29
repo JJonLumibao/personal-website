@@ -33,7 +33,6 @@
     </button>
     <div id="menu" class="menu-container">
       <div class="menu-panel">
-        <!-- <i class="fas fa-times menu-close" data-close></i> -->
         <a href="../index.html" class="menu-item">Home</a>
         <a href="./about-me.html" class="menu-item">About Me</a>
         <a href="./projects.html" class="menu-item">Projects</a>
@@ -45,6 +44,16 @@
       <section class="hero">
         <img class="hero-img scroll-animate" src="../assets/images/header/projects.jpg" alt="STEPS prototype design" />
         <h1 class="hero-title scroll-animate">Projects</h1>
+        <div class="resume-tab">
+          <div class="social-btn resume-btn">
+            <i class="fa-regular fa-file social-btn-icon"></i>
+            <a href="./assets/Jani Jon Lumibao - Resume 2026.pdf" target="_blank">View Resume</a>
+          </div>
+          <div class="social-btn resume-btn">
+            <i class="fa-solid fa-download social-btn-icon"></i>
+            <a href="./assets/Jani Jon Lumibao - Resume 2026.pdf" download>Download Resume</a>
+          </div>
+        </div>
       </section>
 
       <section id="steps-flag" class="socials">
@@ -59,80 +68,7 @@
         </a>
       </section>
 
-      <div class="project-container">
-        <div class="project-content scroll-animate">
-          <div class="project-header">
-            <h2>Style Tracking Expressive Pad System (STEPS)</h2>
-            <div class="project-links">
-              <div class="project-btn">
-                <i class="fa-brands fa-github project-icon"></i>
-                <a href="https://github.com/JJonLumibao/steps-senior-design" target="_blank">View Code</a>
-              </div>
-              <div class="project-btn">
-                <i class="fa-brands fa-youtube project-icon"></i>
-                <a href="https://youtu.be/QMy2-tpW8sA?si=IyqvaNCBUetdmLLd" target="_blank">View Demo</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-text">
-            <div><b>Team Size:</b> 5</div>
-            <div><b>Role:</b> Embedded Programmer and Hardware Assistant</div>
-            <div><b>Time Spent:</b> ≈ 7 months</div>
-            <div>
-              <b>Description: </b> A 9-step input dance pad that utilizes force-sensing resistors (FSRs), 
-              computer vision, a custom Godot game engine, and an IR LED array to track expressive dance 
-              movements. 
-            </div>
-            <div>
-              <b>Technologies:</b> C/C++, ATmega32u4, ATmega328P, I2C Communication, FSR Sensors, RGB LEDs, 
-              Arduino IDE, Godot Engine
-            </div>
-            <div>
-              <b>Key Contributions:</b>
-              <ul>
-                <li>Programmed a master ATmega32u4 controller communicating with nine ATmega328P tile controllers.</li>
-                <li>Implemented FSR sensor detection and signal processing for dance input recognition.</li>
-                <li>Developed programmable RGB LED feedback system within each tile.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="project-content scroll-animate">
-          <div id="omnigauntlet-flag" class="project-header">
-            <h2>Omni-Gauntlet</h2>
-            <div class="project-links">
-              <div class="project-btn">
-                <i class="fa-brands fa-github project-icon"></i>
-                <a href="https://github.com/JJonLumibao/OmniGauntlet" target="_blank">View Code</a>
-              </div>
-              <div class="project-btn">
-                <i class="fa-brands fa-youtube project-icon"></i>
-                <a href="https://youtu.be/oE2jDW6wtuc?si=QhEBK-MmB7k078C-" target="_blank">View Demo</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-text">
-            <div><b>Team Size:</b> 4</div>
-            <div><b>Role:</b> Embedded Programmer</div>
-            <div><b>Time Spent:</b> ≈ 3 months</div>
-            <div>
-              <b>Description:</b> A gesture-controlled glove system that wirelessly commands a 
-              mecanum-wheel robot using ESP32 microcontrollers.
-            </div>
-            <div>
-              <b>Technologies:</b> ESP32-WROOM-32, WiFi Communication, C/C++, Arduino IDE
-            </div>
-            <div>
-              <b>Key Contributions:</b>
-              <ul>
-                <li>Programmed ESP32 sender firmware for glove-based motion input.</li>
-                <li>Developed receiver firmware to control the robot vehicle in real time.</li>
-                <li>Implemented wireless communication protocol between glove and robot.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="project-container"></div>
     </main>
 
     <footer class="footer">
@@ -141,5 +77,6 @@
       </div>
     </footer>
   </body>
+  <script src="../js/projects.js"></script>
   <script src="../js/main.js"></script>
 </html>

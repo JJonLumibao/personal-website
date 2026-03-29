@@ -13,12 +13,12 @@ The following is the structure of the following repository:
 ```text
 personal-website/
 │── assets/
+│ ├── Jani Jon Lumibao - Resume 2026.pdf
 │ └── images/
 │   ├── header
 │     └── aboutme.jpg
 │     └── profile.png
 │     └── projects.jpg
-│     └── webdesign.png
 │   └── projects
 │     └── omnigauntlet.png
 │     └── STEPS.png
@@ -31,9 +31,9 @@ personal-website/
 │── html/
 │ └── about-me.html
 │ └── projects.html
-│ └── web-designs.html
 │── js/
 │ └── main.js
+│ └── projects.js
 │── index.html
 │── package-lock.json
 │── package.json

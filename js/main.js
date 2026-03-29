@@ -6,6 +6,7 @@ const closeMenus = document.querySelectorAll('[data-close]');
 const menu = document.querySelector('#menu');
 const scrollAnimate = document.querySelectorAll('.scroll-animate');
 
+
 openMenu.addEventListener('click', function() {
   menu.classList.toggle('open');
 });
