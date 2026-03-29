@@ -10,6 +10,14 @@
   z-index: 2000;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 40px;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -27,6 +35,10 @@
 }
 
 /* Navigation */
+.name {
+  font-size: 1.5rem;
+}
+
 .nav-list {
   display: flex;
   list-style: none;
@@ -199,6 +211,7 @@
 }
 
 .social-icons {
+  position: relative;
   color: black;
   font-size: 40px;
   transition: transform 0.1s ease-in-out;

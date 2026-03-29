@@ -32,7 +32,34 @@ const projectList = [
       'Developed receiver firmware to control the robot vehicle in real time.',
       'Implemented wireless communication protocol between glove and robot.',
     ],
-  }
+  },
+  {
+    title: 'Steezee',
+    github: 'https://github.com/rohant20/Group5-Large-Project',
+    teamSize: 5,
+    role: 'Backend Developer',
+    timeSpent: '≈ 3 months',
+    description: `A full-stack clothing store website with integrated OpenAI APIs`,
+    technologies: 'PHP, mySQL, DigitalOcean, PostMan, React, TypeScript, Vite, HTML/CSS',
+    contributions: [
+      'Programmed email verification, forgot password, and reset password APIs',
+      'Assisted in the development of other APIs',
+    ],
+  },
+  {
+    title: 'Globos Resurgence',
+    github: 'https://github.com/Jesvin2003/globos_resurgence',
+    teamSize: 4,
+    role: 'Project Lead, Game Designer',
+    timeSpent: '≈ 3 months',
+    description: `A 2D platformer game developed through Unity. First experience leading an
+              engineering related group project and working with Unity. `,
+    technologies: 'Unity',
+    contributions: [
+      'Led development and game design',
+      'Implemented and designed all maps and characters',
+    ],
+  }, 
 ]
 
 projectList.forEach((item) => {
@@ -46,10 +73,11 @@ projectList.forEach((item) => {
           <i class="fa-brands fa-github social-btn-icon"></i>
           <a href="${item.github}" target="_blank">View Code</a>
         </div>
+        ${item.youtube ? `
         <div class="social-btn">
           <i class="fa-brands fa-youtube social-btn-icon"></i>
           <a href="${item.youtube}" target="_blank">View Demo</a>
-        </div>
+        </div>` : ''}
       </div>
     </div>
     <div class="project-text">
