@@ -1,7 +1,25 @@
 const projectContainer = document.querySelector('.project-container');
 const projectList = [
   {
+    title: 'Save Slot HQ',
+    flag: 'save-slot-hq-flag',
+    github: 'https://github.com/JJonLumibao/save-slot-hq',
+    teamSize: 1,
+    role: 'Full-Stack Developer',
+    timeSpent: '2 weeks',
+    description: `My first full-stack project, a web application that allows users to 
+      to interact with a collection of games managed by administrators. Users can create 
+      accounts, favorite games, leave reviews, and manage their profiles based on their 
+      assigned role.`,
+    technologies: `React, TypeScript, Vite, React Router, TanStack Query (React Query), 
+      React Hot Toast, CSS, Node.js, Express, Prisma ORM, PostgreSQL, JWT, bcrypt, Zod, Postman`,
+    contributions: [
+      'Developed entire application (database, backend, and frontend) as a solo project.',
+    ],
+  }, 
+  {
     title: 'Style Tracking Expressive Pad System (STEPS)',
+    flag: 'steps-flag',
     github: 'https://github.com/JJonLumibao/steps-senior-design',
     youtube: 'https://youtu.be/QMy2-tpW8sA?si=IyqvaNCBUetdmLLd',
     teamSize: 5,
@@ -19,6 +37,7 @@ const projectList = [
   }, 
   {
     title: 'Omni-Gauntlet',
+    flag: 'omnigauntlet-flag',
     github: 'https://github.com/JJonLumibao/OmniGauntlet',
     youtube: 'https://youtu.be/oE2jDW6wtuc?si=QhEBK-MmB7k078C-',
     teamSize: 4,
@@ -35,6 +54,7 @@ const projectList = [
   },
   {
     title: 'Steezee',
+    flag: 'steezee-flag',
     github: 'https://github.com/rohant20/Group5-Large-Project',
     teamSize: 5,
     role: 'Backend Developer',
@@ -48,6 +68,7 @@ const projectList = [
   },
   {
     title: 'Globos Resurgence',
+    flag: 'globos-resurgence-flag',
     github: 'https://github.com/Jesvin2003/globos_resurgence',
     teamSize: 4,
     role: 'Project Lead, Game Designer',
@@ -62,11 +83,11 @@ const projectList = [
   }, 
 ]
 
-projectList.forEach((item) => {
+projectList.forEach((item, index) => {
   const project = document.createElement('div');
   project.classList.add('project-content', 'scroll-animate');
   project.innerHTML = `
-    <div class="project-header">
+    <div class="project-header" id="${item.flag}">
       <h2>${item.title}</h2>
       <div class="project-links">
         <div class="social-btn">

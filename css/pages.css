@@ -32,6 +32,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  scroll-margin-top: 100px;
 }
 
 .project-links {
