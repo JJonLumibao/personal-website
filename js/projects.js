@@ -4,6 +4,7 @@ const projectList = [
     title: 'Save Slot HQ',
     flag: 'save-slot-hq-flag',
     github: 'https://github.com/JJonLumibao/save-slot-hq',
+    youtube: 'https://www.youtube.com/watch?v=9o1edCIB2yY',
     teamSize: 1,
     role: 'Full-Stack Developer',
     timeSpent: '2 weeks',
