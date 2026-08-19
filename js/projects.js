@@ -1,6 +1,25 @@
 const projectContainer = document.querySelector('.project-container');
 const projectList = [
   {
+    title: 'JADE Bank',
+    flag: 'jade-bank-flag',
+    github: 'https://github.com/JJonLumibao/cognixia-group-1-console-app/tree/Version-1-Full-Stack-App',
+    youtube: 'https://youtu.be/7ji9NGCg27I',
+    teamSize: 4,
+    role: 'Full-Stack Developer',
+    timeSpent: '5 days',
+    description: `An AWS-deployed full-stack banking management application developed as a team project, 
+      featuring a React frontend, FastAPI backend, and PostgreSQL database. The application provides 
+      secure user authentication and RESTful API functionality for managing customers, accounts, 
+      branches, and transactions.`,
+    technologies: `React, JavaScript, Vite, Python, FastAPI, AWS, PostgreSQL, CSS, Node.js, JWT, bcrypt, Postman`,
+    contributions: [
+      'Collaborated with a team of 4 to develop the full-stack banking application.',
+      'Implemented secure user authentication and RESTful API endpoints for managing banking operations.',
+      'Tested endpoints using FastAPI and Postman to ensure proper functionality.'
+    ],
+  }, 
+  {
     title: 'Save Slot HQ',
     flag: 'save-slot-hq-flag',
     github: 'https://github.com/JJonLumibao/save-slot-hq',
